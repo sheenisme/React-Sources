@@ -14,44 +14,60 @@ let myResultTab = null;
 let userName = '';
 const tabFormateRs = [
   {
-    // Tiger
+    cateKey: 'E',
+    cateName: '实际型',
+    score: 0,
+    type: '家里你说了算',
+    info: '愿意使用工具从事操作性工作，动手能力强，做事手脚灵活，动作协调。偏好于具体任务，不善言辞，做事保守，较为谦虚。缺乏社交能力，通常喜欢独立做事。'
+  },
+  {
+    cateKey: 'I',
+    cateName: '常规型',
+    score: 0,
+    type: '非常细心的人，另一半很幸福',
+    info: '尊重权威和规章制度，喜欢按计划办事，细心、有条理，习惯接受他人的指挥和领导，自己不谋求领导职务。喜欢关注实际和细节情况，通常较为谨慎和保守，缺乏创造性，不喜欢冒险和竞争，富有自我牺牲精神。'
+  },
+  {
+    cateKey: 'S',
+    cateName: '企业型',
+    score: 0,
+    type: '你就是传说中的领导',
+    info: '追求权力、权威和物质财富，具有领导才能。喜欢竞争、敢冒风险、有野心、抱负。为人务实，习惯以利益得失，权利、地位、金钱等来衡量做事的价值，做事有较强的目的性。'
+  },
+  {
+    cateKey: 'N',
+    cateName: '社会型',
+    score: 0,
+    type: '没办法，你到处都有朋友',
+    info: '喜欢与人交往、不断结交新的朋友、善言谈、愿意教导别人。关心社会问题、渴望发挥自己的社会作用。寻求广泛的人际关系，比较看重社会义务和社会道德。'
+  },
+  {
     cateKey: 'T',
-    cateName: '老虎型',
+    cateName: '艺术型',
     score: 0,
-    type: '老虎型',
-    info: '具有老虎族群特质者，约占人口15 %，其共同性格为充满自信、竞争心强、主动且企图心强烈，是个有决断力的领导者。一般而言，老虎型的人胸怀大志，勇于冒险，看问题能够直指核心，并对目标全力以赴。他们在领导风格及决策上，强调权威与果断，擅长危机处理，此种性格最适合开创性与改革性的工作。全世界首富，微软公司的总裁比尔盖兹就是典型的代表人物。'
+    type: '没错，艺术家就该留长发',
+    info: '有创造力，乐于创造新颖、与众不同的成果，渴望表现自己的个性，实现自身的价值。做事理想化，追求完美，不重实际。具有一定的艺术才能和个性。善于表达、怀旧、心态较为复杂。'
   },
   {
-    // Peacock 
+    cateKey: 'F',
+    cateName: '研究型',
+    score: 0,
+    type: '很牛逼（除了头发）',
+    info: '思想家而非实干家,抽象思维能力强，求知欲强，肯动脑，善思考，不愿动手。喜欢独立的和富有创造性的工作。知识渊博，有学识才能，不善于领导他人。考虑问题理性，做事喜欢精确，喜欢逻辑分析和推理，不断探讨未知的领域。'
+  },
+  {
     cateKey: 'P',
-    cateName: '孔雀型',
+    cateName: 'PP型',
     score: 0,
-    type: '孔雀型',
-    info: '孙中山先生及美国总统克林顿皆是营造气氛、宣扬理念、塑造愿景的能手，他们都是属于占人口15%的孔雀型领导族群。孔雀型的共同特质为：人际关系能力极强，擅长以口语表达感受而引起共鸣，很会激励并带动气氛。他们喜欢跟别人互动，重视群体的归属感，基本上是比较「人际导向」。由于他们富同理心并乐于分享，具有很好的亲和力，在服务业、销售业、传播业及公共关系等领域中，孔雀型的领导者都有很杰出的表现。'
+    type: 'PPPPPP',
+    info: 'PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP'
   },
   {
-    // Koala
-    cateKey: 'K',
-    cateName: '考拉型',
+    cateKey: 'J',
+    cateName: 'JJ型',
     score: 0,
-    type: '考拉型',
-    info: '他们的共同特质为平易近人、敦厚可靠、避免冲突与不具批判性。在行为上，表现出不慌不忙、冷静自持的态度。他们注重稳定与中长程规划，现实生活中，常会反思自省并以和谐为中心，即使面对困境，亦能泰然自若，从容应付。 在决策上，他们需要较充足的时间做规划，意志坚定、步调稳健。考拉型可以说是一群默默耕耘的无名英雄，在平凡中见其伟大，占人口20 %。南非国父曼德拉，即是最佳的写照。'
-  },
-  {
-    // Owl
-    cateKey: 'O',
-    cateName: '猫头鹰型',
-    score: 0,
-    type: '猫头鹰型',
-    info: '他们的共同特质为重计划、条理、细节精准。在行为上，表现出喜欢理性思考与分析、较重视制度、结构、规范。他们注重执行游戏规则、循规蹈矩、巨细靡遗、重视品质、敬业负责。'
-  },
-  {
-    // Chameleon
-    cateKey: 'C',
-    cateName: '变色龙型',
-    score: 0,
-    type: '变色龙型',
-    info: '他们的共同特征为适应力及弹性都相当强，擅于整合内外资源，兼容并蓄，以合理化及中庸之道来待人处事。变色龙型了人，会依组织目标及所处环境的任务需求，随时调整自己，因为他们没有明确的预设立场，不走极端，柔软性高，是个称职的谈判斡旋高手，也是手腕圆融的外交人才。在环境骤变的时代，他们更能随机应变，因此不论在企业开创期、过度期或转型期，均非常需要此种人才参与。占人口30 %，诸葛孔明是代表性人物。'
+    type: 'JJJJJJJJJJJ',
+    info: 'JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ'
   }
 ];
 let tabFormateConfig = {
@@ -83,7 +99,11 @@ class Introduce extends Component {
   render () {
     return (
       <div className={this.props.show ? 'introduce' : 'hide'}>
+        MBTI人格理论的基础是著名心理学家卡尔·荣格先生关于心理类型的划分。
         MBTI职业性格测试是国际最为流行的职业人格评估工具，作为一种对个性的判断和分析，是一个理论模型，从纷繁复杂的个性特征中，归纳提炼出4个关键要素——动力、信息收集、决策方式、生活方式，进行分析判断，从而把不同个性的人区别开来。
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        测试须知：（1）您有足够的时间答题，请您仔细阅读题目，根据您的第一反应做出决定。（2）以下各题目没有正误好坏之分，请按照与您性格符合的程度进行打分。
         <br />
       </div>
     )
@@ -140,11 +160,11 @@ class Question extends Component {
         <div className="questionNo"><span className="no">{this.state.no}</span><span className="nums"> / {this.state.nums}</span></div>
         <p className="title">{this.state.questions[this.state.no - 1].title}</p>
         <p className="action">
-          <span className="button" onClick={this.handleAnswer.bind(this, 5)}>非常同意</span>
-          <span className="button" onClick={this.handleAnswer.bind(this, 4)}>比较同意</span>
-          <span className="button" onClick={this.handleAnswer.bind(this, 3)}>差不多</span>
-          <span className="button" onClick={this.handleAnswer.bind(this, 2)}>一点同意</span>
-          <span className="button" onClick={this.handleAnswer.bind(this, 1)}>不同意</span>
+          <span className="button" onClick={this.handleAnswer.bind(this, 5)}>5分</span>
+          <span className="button" onClick={this.handleAnswer.bind(this, 4)}>4分</span>
+          <span className="button" onClick={this.handleAnswer.bind(this, 3)}>3分</span>
+          <span className="button" onClick={this.handleAnswer.bind(this, 2)}>2分</span>
+          <span className="button" onClick={this.handleAnswer.bind(this, 1)}>1分</span>
         </p>
       </div>
     )
@@ -198,7 +218,7 @@ class Result extends Component {
     })
     console.log("测试结果如下：", rsData)
     this.setState({
-      rs: rsData[0].cateKey,
+      rs: rsData[0].cateKey + rsData[1].cateKey + rsData[2].cateKey,
       type: rsData[0].type,
       info: rsData[0].info
     })
@@ -303,13 +323,12 @@ class Result extends Component {
 
     var addSql = 'INSERT INTO PDPTest(name,type,typeName,score) VALUES(?,?,?,?)';
     var addSqlParams = [ userName, rsData[0].cateKey, rsData[0].cateName, rsData[0].score];
-    //增
+    // 增
     connection.query(addSql, addSqlParams, function (err, result) {
       if (err) {
         console.log('[INSERT ERROR] - ', err.message);
         return;
       }
-
       console.log('--------------------------INSERT----------------------------');
       //console.log('INSERT ID:',result.insertId);        
       console.log('INSERT ID:', result);
