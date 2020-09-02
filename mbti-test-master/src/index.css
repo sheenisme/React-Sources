@@ -95,11 +95,19 @@ footer{
   line-height: 50px;
 }
 .question .title{
-  padding: 60px 0 30px 0;
+  padding: 30px 0 10px 0;
 }
 .question .action{
   text-align: center;
 }
+.question  .answer-title{
+  font-size: 17px;
+  font-weight: 600;
+  font-family: sans-serif;
+  text-align: center;
+  vertical-align: middle;
+}
+
 .question .button{
   width: 120px;
   margin: 0 20px;
@@ -149,7 +157,12 @@ footer{
     font-size: 32px;
   }
   .question .button{
-    width: 100px;
+    width: 140px;
     margin: 0 10px;
+  }
+  .question .answer-title{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
   }
 }

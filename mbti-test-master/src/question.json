@@ -1,62 +1,440 @@
 [
-  {"cateName": "常规型", "cateKey": "C", "cateId": 1, "title": "对别人借我的和我借别人的东西，我都能记得很清楚。", "score": 1},
-  {"cateName": "常规型", "cateKey": "C", "cateId": 1, "title": "我喜欢经常请示上级。", "score": 1},
-  {"cateName": "常规型", "cateKey": "C", "cateId": 1, "title": "我是一个沉静而不易动感情的人。", "score": 1},
-  {"cateName": "常规型", "cateKey": "C", "cateId": 1, "title": "我喜欢按部就班地完成要做的工作。", "score": 1},
-  {"cateName": "常规型", "cateKey": "C", "cateId": 1, "title": "我总留有充裕的时间去赴约会。", "score": 1},
-  {"cateName": "常规型", "cateKey": "C", "cateId": 1, "title": "我喜欢把一切安排得整整齐齐、井井有条。", "score": 1},
-  {"cateName": "常规型", "cateKey": "C", "cateId": 1, "title": "对于急躁、爱发脾气的人，我仍能以礼相待。", "score": 1},
-  {"cateName": "常规型", "cateKey": "C", "cateId": 1, "title": "每次写信我都一挥而就，不再重复。", "score": 0},
-  {"cateName": "常规型", "cateKey": "C", "cateId": 1, "title": "我办事很少思前想后。", "score": 0},
-  {"cateName": "常规型", "cateKey": "C", "cateId": 1, "title": "我希望能经常换不同的工作来做。", "score": 0},
-  {"cateName": "现实型", "cateKey": "R", "cateId": 2, "title": "在工作中我喜欢独自筹划，不愿受别人干涉。", "score": 1},
-  {"cateName": "现实型", "cateKey": "R", "cateId": 2, "title": "我喜欢在做事情前，对此事情做出细致的安排。", "score": 1},
-  {"cateName": "现实型", "cateKey": "R", "cateId": 2, "title": "我喜欢亲自动手制作一些东西，从中得到乐趣。", "score": 1},
-  {"cateName": "现实型", "cateKey": "R", "cateId": 2, "title": "我喜欢使用榔头一类的工具。", "score": 1},
-  {"cateName": "现实型", "cateKey": "R", "cateId": 2, "title": "如果掌握一门手艺并能以此为生，我会感到非常满意。", "score": 1},
-  {"cateName": "现实型", "cateKey": "R", "cateId": 2, "title": "我讨厌修理自行车、电器一类的工作。", "score": 0},
-  {"cateName": "现实型", "cateKey": "R", "cateId": 2, "title": "我的动手能力很差。", "score": 0},
-  {"cateName": "现实型", "cateKey": "R", "cateId": 2, "title": "我曾渴望当一名汽车司机。", "score": 0},
-  {"cateName": "现实型", "cateKey": "R", "cateId": 2, "title": "我讨厌跟各类机械打交道。", "score": 0},
-  {"cateName": "现实型", "cateKey": "R", "cateId": 2, "title": "我小时候经常把玩具拆开，把里面看个究竟。", "score": 0},
-  {"cateName": "研究型", "cateKey": "I", "cateId": 3, "title": "我经常不停地思考某一问题，直到想出正确的答案。", "score": 1},
-  {"cateName": "研究型", "cateKey": "I", "cateId": 3, "title": "我喜欢抽象思维的工作，不喜欢动手的工作。", "score": 1},
-  {"cateName": "研究型", "cateKey": "I", "cateId": 3, "title": "我喜欢需要运用智力的游戏。", "score": 1},
-  {"cateName": "研究型", "cateKey": "I", "cateId": 3, "title": "当我工作时，我喜欢避免干扰。", "score": 1},
-  {"cateName": "研究型", "cateKey": "I", "cateId": 3, "title": "我的理想是当一名科学家。", "score": 1},
-  {"cateName": "研究型", "cateKey": "I", "cateId": 3, "title": "我喜欢阅读自然科学方面的书籍和杂志。", "score": 1},
-  {"cateName": "研究型", "cateKey": "I", "cateId": 3, "title": "我很难做那种需要持续集中注意力的工作。", "score": 0},
-  {"cateName": "研究型", "cateKey": "I", "cateId": 3, "title": "我讨厌学数学。", "score": 0},
-  {"cateName": "研究型", "cateKey": "I", "cateId": 3, "title": "在实验室里独自做实验会令我寂寞难耐。", "score": 0},
-  {"cateName": "研究型", "cateKey": "I", "cateId": 3, "title": "遇到难解答的问题时，我常常放弃。", "score": 0},
-  {"cateName": "管理型", "cateKey": "E", "cateId": 4, "title": "我曾经渴望有机会参加探险。", "score": 1},
-  {"cateName": "管理型", "cateKey": "E", "cateId": 4, "title": "和不熟悉的人交谈对我来说毫不困难。", "score": 1},
-  {"cateName": "管理型", "cateKey": "E", "cateId": 4, "title": "当我开始做一件事情后，即使碰到再多的困难，我也要执著地干下去。", "score": 1},
-  {"cateName": "管理型", "cateKey": "E", "cateId": 4, "title": "我总是主动地向别人提出自己的建议。", "score": 1},
-  {"cateName": "管理型", "cateKey": "E", "cateId": 4, "title": "我更喜欢自己下了赌注的比赛或游戏。", "score": 1},
-  {"cateName": "管理型", "cateKey": "E", "cateId": 4, "title": "如果待遇相同，我宁愿当商品推销员，而不愿当图书管理员。", "score": 1},
-  {"cateName": "管理型", "cateKey": "E", "cateId": 4, "title": "我喜欢在人事部门工作。", "score": 1},
-  {"cateName": "管理型", "cateKey": "E", "cateId": 4, "title": "在集体讨论中，我往往保持沉默。", "score": 0},
-  {"cateName": "管理型", "cateKey": "E", "cateId": 4, "title": "我愿意从事虽然工资少、但是比较稳定的职业。", "score": 0},
-  {"cateName": "管理型", "cateKey": "E", "cateId": 4, "title": "和别人谈判时，我总是很容易放弃自己的观点", "score": 0},
-  {"cateName": "社会型", "cateKey": "S", "cateId": 5, "title": "我很容易结识同性朋友。", "score": 1},
-  {"cateName": "社会型", "cateKey": "S", "cateId": 5, "title": "我乐于解除别人的痛苦。", "score": 1},
-  {"cateName": "社会型", "cateKey": "S", "cateId": 5, "title": "我喜欢作一名教师。", "score": 1},
-  {"cateName": "社会型", "cateKey": "S", "cateId": 5, "title": "大家公认我是一名勤劳踏实的、愿为大家服务的人", "score": 1},
-  {"cateName": "社会型", "cateKey": "S", "cateId": 5, "title": "我喜欢把一件事情做完后再做另一件事。", "score": 0},
-  {"cateName": "社会型", "cateKey": "S", "cateId": 5, "title": "当我一个独处时，会感到更愉快。", "score": 0},
-  {"cateName": "社会型", "cateKey": "S", "cateId": 5, "title": "我喜欢参加各种各样的聚会。", "score": 0},
-  {"cateName": "社会型", "cateKey": "S", "cateId": 5, "title": "对于社会问题，我通常持中庸的态度。", "score": 0},
-  {"cateName": "社会型", "cateKey": "S", "cateId": 5, "title": "听别人谈“家中被盗”一类的事，很难引起我的同情。", "score": 0},
-  {"cateName": "社会型", "cateKey": "S", "cateId": 5, "title": "和一群人在一起的时候，我总想不出恰当的话来说。", "score": 0},
-  {"cateName": "艺术型", "cateKey": "A", "cateId": 6, "title": "我喜欢做戏剧、音乐、歌舞、新闻采访等方面的工作。", "score": 1},
-  {"cateName": "艺术型", "cateKey": "A", "cateId": 6, "title": "我喜欢成为人们注意的焦点。", "score": 1},
-  {"cateName": "艺术型", "cateKey": "A", "cateId": 6, "title": "我喜欢不时地夸耀一下自己取得的好成就。", "score": 1},
-  {"cateName": "艺术型", "cateKey": "A", "cateId": 6, "title": "音乐能使我陶醉。", "score": 1},
-  {"cateName": "艺术型", "cateKey": "A", "cateId": 6, "title": "有些人太霸道，有时明明知道他们是对的，也要和他们对着干。", "score": 1},
-  {"cateName": "艺术型", "cateKey": "A", "cateId": 6, "title": "我爱幻想。", "score": 1},
-  {"cateName": "艺术型", "cateKey": "A", "cateId": 6, "title": "当接受新任务后，我喜欢以自己的独特方法去完成它。", "score": 1},
-  {"cateName": "艺术型", "cateKey": "A", "cateId": 6, "title": "我有文艺方面的天赋。", "score": 1},
-  {"cateName": "艺术型", "cateKey": "A", "cateId": 6, "title": "看情感影片时，我常禁不住眼圈红润。", "score": 1},
-  {"cateName": "艺术型", "cateKey": "A", "cateId": 6, "title": "与言情小说相比，我更喜欢推理小说。", "score": 0}
+  {
+    "cateName": "外倾性",
+    "cateKey": "E",
+    "cateId": 1,
+    "title": "当你遇到新朋友时,你",
+    "answerA": "说话的时间比聆听的时间多",
+    "answerB": "聆听的时间比说话的时间多",
+    "score": 1
+  },
+  {
+    "cateName": "外倾性",
+    "cateKey": "E",
+    "cateId": 1,
+    "title": "你参与社交聚会时",
+    "answerA": "总是能认识新朋友",
+    "answerB": "喜欢跟几个亲密挚友呆在一起",
+    "score": 1
+  },
+  {
+    "cateName": "外倾性",
+    "cateKey": "E",
+    "cateId": 1,
+    "title": "下列哪种说法比较适合你?",
+    "answerA": "当我与友人尽兴后,我会感觉到精力充沛,并继续追求这种娱乐",
+    "answerB": "当我与友人尽兴后,我会感到疲惫,觉得需要一些空间.",
+    "score": 1
+  },
+  {
+    "cateName": "外倾性",
+    "cateKey": "E",
+    "cateId": 1,
+    "title": "下列哪种说法比较适合你?",
+    "answerA": "我会边说话,边思考",
+    "answerB": "我在说话前,通常会思考要说什么话",
+    "score": 1
+  },
+  {
+    "cateName": "外倾性",
+    "cateKey": "E",
+    "cateId": 1,
+    "title": "下列哪种说法比较适合你?",
+    "answerA": "认识我的人,一般都知道什么对我来说是重要的",
+    "answerB": "除了我感觉亲近的人,我不会对人说出什么对我是重要的",
+    "score": 1
+  },
+  {
+    "cateName": "外倾性",
+    "cateKey": "E",
+    "cateId": 1,
+    "title": "下列哪种说法比较适合你?",
+    "answerA": "我独处太久,便会感到不安",
+    "answerB": "若没由足够的独处时间,我便会感到烦躁不安",
+    "score": 1
+  },
+  {
+    "cateName": "外倾性",
+    "cateKey": "E",
+    "cateId": 1,
+    "title": "当你放假时,你多数会?",
+    "answerA": "花多点时间,与别人共度",
+    "answerB": "花多点时间自己阅读、散步或者发呆",
+    "score": 1
+  },
+  {
+    "cateName": "外倾性",
+    "cateKey": "E",
+    "cateId": 1,
+    "title": "当你放假时,你多数会?",
+    "answerA": "喜欢参观一些著名景点",
+    "answerB": "逛博物馆或一些较为幽静的地方",
+    "score": 1
+  },
+  {
+    "cateName": "外倾性",
+    "cateKey": "E",
+    "cateId": 1,
+    "title": "下列哪个说法最能贴切形容你对自己的看法?",
+    "answerA": "我为人坦率",
+    "answerB": "我思想深沉",
+    "score": 1
+  },
+  {
+    "cateName": "外倾性",
+    "cateKey": "E",
+    "cateId": 1,
+    "title": "下列哪个说法最能贴切形容你对自己的看法?",
+    "answerA": "我爽朗活泼",
+    "answerB": "我沉稳温和",
+    "score": 1
+  },
+  {
+    "cateName": "外倾性",
+    "cateKey": "E",
+    "cateId": 1,
+    "title": "下列哪个说法最能贴切形容你对自己的看法?",
+    "answerA": "我个性率直",
+    "answerB": "我个性内敛",
+    "score": 1
+  },
+  {
+    "cateName": "外倾性",
+    "cateKey": "E",
+    "cateId": 1,
+    "title": "你比较倾向于？",
+    "answerA": "自己的工作被欣赏,即使自己并不满意",
+    "answerB": "创造一些有价值的东西,但不一定需要别人知道",
+    "score": 1
+  },
+
+
+  {
+    "cateName": "感觉型",
+    "cateKey": "S",
+    "cateId": 3,
+    "title": "下列哪种是你的一般生活取向?",
+    "answerA": "只管做吧",
+    "answerB": "找出多种不同的选择",
+    "score": 1
+  },
+  {
+    "cateName": "感觉型",
+    "cateKey": "S",
+    "cateId": 3,
+    "title": "当你尝试了解某些事情时,一般你会",
+    "answerA": "先了解细节",
+    "answerB": "先了解整体情况,细节容后再谈",
+    "score": 1
+  },
+  {
+    "cateName": "感觉型",
+    "cateKey": "S",
+    "cateId": 3,
+    "title": "下列哪种说法比较适合你?",
+    "answerA": "我较有兴趣知道别人的经历,例如:他们做过什么事?认识什么人?",
+    "answerB": "我较有兴趣知道别人的计划与梦想,例如他们会往哪里去?憧憬什么?",
+    "score": 1
+  },
+  {
+    "cateName": "感觉型",
+    "cateKey": "S",
+    "cateId": 3,
+    "title": "下列哪种说法比较适合你?",
+    "answerA": "四周的环境对我很重要,而且会影响我的感受",
+    "answerB": "如果我喜欢所做的事情,气氛对我而言并不是那么重要",
+    "score": 1
+  },
+  {
+    "cateName": "感觉型",
+    "cateKey": "S",
+    "cateId": 3,
+    "title": "下列哪种说法比较适合你?",
+    "answerA": "如果我喜欢某种活动,我会经常进行这种活动",
+    "answerB": "我一旦熟悉某种活动后,便希望转而尝试其他新的活动",
+    "score": 1
+  },
+  {
+    "cateName": "感觉型",
+    "cateKey": "S",
+    "cateId": 3,
+    "title": "下列哪种说法比较适合你?",
+    "answerA": "我对一些没有实际用途的意念不感兴趣",
+    "answerB": "我喜欢意念的本身,并享受想象意念的过程",
+    "score": 1
+  },
+  {
+    "cateName": "感觉型",
+    "cateKey": "S",
+    "cateId": 3,
+    "title": "当你放假时,你多数会?",
+    "answerA": "再次去喜欢的地方度假",
+    "answerB": "选择一些从来未去过的地方",
+    "score": 1
+  },
+  {
+    "cateName": "感觉型",
+    "cateKey": "S",
+    "cateId": 3,
+    "title": "当你放假时,你多数会?",
+    "answerA": "经常在喜欢的餐厅用膳",
+    "answerB": "去新开业的餐厅尝试新的菜式",
+    "score": 1
+  },
+  {
+    "cateName": "感觉型",
+    "cateKey": "S",
+    "cateId": 3,
+    "title": "下列哪个说法最能贴切形容你对自己的看法?",
+    "answerA": "会留意观察事实并作为参考",
+    "answerB": "非常注重事实并以事实为依据",
+    "score": 1
+  },
+  {
+    "cateName": "感觉型",
+    "cateKey": "S",
+    "cateId": 3,
+    "title": "下列哪个说法最能贴切形容你对自己的看法?",
+    "answerA": "我实事求是",
+    "answerB": "我富于想象力",
+    "score": 1
+  },
+  {
+    "cateName": "感觉型",
+    "cateKey": "S",
+    "cateId": 3,
+    "title": "下列哪个说法最能贴切形容你对自己的看法?",
+    "answerA": "我实事求是",
+    "answerB": "我具有远大目光",
+    "score": 1
+  },
+  {
+    "cateName": "感觉型",
+    "cateKey": "S",
+    "cateId": 3,
+    "title": "你比较倾向于？",
+    "answerA": "希望在自己有兴趣的范畴,积累丰富的经验",
+    "answerB": "希望有各式各样不同的经验",
+    "score": 1
+  },
+
+
+  {
+    "cateName": "思维型",
+    "cateKey": "T",
+    "cateId": 5,
+    "title": "你喜欢自己的哪种性格?",
+    "answerA": "冷静而理性",
+    "answerB": "热情而体谅",
+    "score": 1
+  },
+  {
+    "cateName": "思维型",
+    "cateKey": "T",
+    "cateId": 5,
+    "title": "你对下列哪种较感兴趣?",
+    "answerA": "知道别人的想法",
+    "answerB": "知道别人的感受",
+    "score": 1
+  },
+  {
+    "cateName": "思维型",
+    "cateKey": "T",
+    "cateId": 5,
+    "title": "下列哪种说法比较适合你?",
+    "answerA": "我擅长定出一些可行的计划",
+    "answerB": "我擅长促进别人同意一些计划,并衷心合作",
+    "score": 1
+  },
+  {
+    "cateName": "思维型",
+    "cateKey": "T",
+    "cateId": 5,
+    "title": "下列哪种说法比较适合你?",
+    "answerA": "我喜欢分析,心思缜密",
+    "answerB": "我对人感兴趣,关心他们所发生的事",
+    "score": 1
+  },
+  {
+    "cateName": "思维型",
+    "cateKey": "T",
+    "cateId": 5,
+    "title": "下列哪种说法比较适合你?",
+    "answerA": "当我做决定时,我会更多考虑正反两面的观点,并会推理与求证",
+    "answerB": "当我做决定时,我会更多了解其他人的想法,并希望达成共识",
+    "score": 1
+  },
+  {
+    "cateName": "思维型",
+    "cateKey": "T",
+    "cateId": 5,
+    "title": "下列哪种说法比较适合你?",
+    "answerA": "当进行谈判时,我依靠自己的知识与技巧",
+    "answerB": "当进行谈判时,我会拉拢其他人统一阵线",
+    "score": 1
+  },
+  {
+    "cateName": "思维型",
+    "cateKey": "T",
+    "cateId": 5,
+    "title": "当你放假时,你多数会?",
+    "answerA": "带着一些与工作或生活有关的事情",
+    "answerB": "处理一些对自己重要的人际关系",
+    "score": 1
+  },
+  {
+    "cateName": "思维型",
+    "cateKey": "T",
+    "cateId": 5,
+    "title": "下列哪个说法最能贴切形容你对自己的看法?",
+    "answerA": "别人认为我会公正的处事,并且尊重他人",
+    "answerB": "别人相信在他们需要时,我会在他们身边",
+    "score": 1
+  },
+  {
+    "cateName": "思维型",
+    "cateKey": "T",
+    "cateId": 5,
+    "title": "下列哪个说法最能贴切形容你对自己的看法?",
+    "answerA": "我知识广博",
+    "answerB": "我善解人意",
+    "score": 1
+  },
+  {
+    "cateName": "思维型",
+    "cateKey": "T",
+    "cateId": 5,
+    "title": "下列哪个说法最能贴切形容你对自己的看法?",
+    "answerA": "喜欢探索思考",
+    "answerB": "喜欢询问实情",
+    "score": 1
+  },
+  {
+    "cateName": "思维型",
+    "cateKey": "T",
+    "cateId": 5,
+    "title": "下列哪个说法最能贴切形容你对自己的看法?",
+    "answerA": "我很公正",
+    "answerB": "我很宽容",
+    "score": 1
+  },
+  {
+    "cateName": "思维型",
+    "cateKey": "T",
+    "cateId": 5,
+    "title": "哪一句较能表达你的想法?",
+    "answerA": "感情用事的人较容易犯错",
+    "answerB": "逻辑思维会令人自以为是,因而容易犯错",
+    "score": 1
+  },
+
+
+  {
+    "cateName": "知觉型",
+    "cateKey": "P",
+    "cateId": 7,
+    "title": "你擅长",
+    "answerA": "在有需要时同时协调进行多项工作",
+    "answerB": "专注在一项工作上,直到把它完成为止",
+    "score": 1
+  },
+  {
+    "cateName": "知觉型",
+    "cateKey": "P",
+    "cateId": 7,
+    "title": "你喜欢下列哪个工作?",
+    "answerA": "能让你迅速和即时作出反应的工作",
+    "answerB": "让你定出目标,然后逐步完成目标的工作",
+    "score": 1
+  },
+  {
+    "cateName": "知觉型",
+    "cateKey": "P",
+    "cateId": 7,
+    "title": "下列哪种说法比较适合你?",
+    "answerA": "我会突然尝试做某些事,看看会有什么事情发生",
+    "answerB": "我尝试做任何事情前,都想事先知道可能有什么事发生",
+    "score": 1
+  },
+  {
+    "cateName": "知觉型",
+    "cateKey": "P",
+    "cateId": 7,
+    "title": "下列哪种说法比较适合你?",
+    "answerA": "即使已定出计划,我也喜欢探讨其它新的方案",
+    "answerB": "一旦计划定出,我便希望依计行事",
+    "score": 1
+  },
+  {
+    "cateName": "知觉型",
+    "cateKey": "P",
+    "cateId": 7,
+    "title": "下列哪种说法比较适合你?",
+    "answerA": "当我专注某件事情时,需要不时停下来休息",
+    "answerB": "当我专注某件事情时,不希望受到任何干扰",
+    "score": 1
+  },
+  {
+    "cateName": "知觉型",
+    "cateKey": "P",
+    "cateId": 7,
+    "title": "当你放假时,你多数会?",
+    "answerA": "随遇而安,做当时想做的事",
+    "answerB": "为想做的事情订出时间表",
+    "score": 1
+  },
+  {
+    "cateName": "知觉型",
+    "cateKey": "P",
+    "cateId": 7,
+    "title": "当你放假时,你多数会?",
+    "answerA": "忘记平时发生的事,专心享受",
+    "answerB": "想着假期过后要准备的事",
+    "score": 1
+  },
+  {
+    "cateName": "知觉型",
+    "cateKey": "P",
+    "cateId": 7,
+    "title": "下列哪个说法最能贴切形容你对自己的看法?",
+    "answerA": "善于随机应变",
+    "answerB": "喜欢按照计划行事",
+    "score": 1
+  },
+  {
+    "cateName": "知觉型",
+    "cateKey": "P",
+    "cateId": 7,
+    "title": "下列哪个说法最能贴切形容你对自己的看法?",
+    "answerA": "容易适应转变",
+    "answerB": "处事井井有条",
+    "score": 1
+  },
+  {
+    "cateName": "知觉型",
+    "cateKey": "P",
+    "cateId": 7,
+    "title": "下列哪个说法最能贴切形容你对自己的看法?",
+    "answerA": "不断的接受新意见",
+    "answerB": "着眼达成目标",
+    "score": 1
+  },
+  {
+    "cateName": "知觉型",
+    "cateKey": "P",
+    "cateId": 7,
+    "title": "你比较倾向于？",
+    "answerA": "暂时放下不愉快的事,直至有心情时才处理",
+    "answerB": "及时处理不愉快的事情,务求把它们抛诸脑后",
+    "score": 1
+  },
+  {
+    "cateName": "知觉型",
+    "cateKey": "P",
+    "cateId": 7,
+    "title": "哪一句较能表达你的想法?",
+    "answerA": "犹豫不决必失败",
+    "answerB": "应该三思而后行",
+    "score": 1
+  }
 ]
