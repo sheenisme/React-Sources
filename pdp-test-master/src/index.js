@@ -4,7 +4,11 @@ import ReactDOM, { render } from 'react-dom';
 import ExportJsonExcel from 'js-export-excel';
 import echarts from 'echarts/lib/echarts';
 import 'echarts/lib/chart/radar';
+import 'rsuite/dist/styles/rsuite-default.css';
 import './index.css';
+import { Alert } from 'rsuite';
+
+
 let questions = require('./question.json');
 questions.sort(function () {
   return (0.5 - Math.random());
@@ -175,7 +179,8 @@ class Result extends Component {
       this.resultAnalysis(props.results)
       // 下载结果表格
       this.downloadExcel(props.results)
-      this.insertToSQL(props.results)
+      // 将下载结果写入数据库--不可用
+      // this.insertToSQL(props.results)
     }
 
   }
@@ -254,70 +259,71 @@ class Result extends Component {
         'PDP类型是': data[0].cateKey,
         '类型名称': data[0].cateName,
         '得分': data[0].score,
+        '测试数据': JSON.stringify(data)
       }
       dataTable.push(obj);
     }
     // console.log(dataTable)
-    option.fileName = userName + '的PDP性格测试结果.xlsx'
+    option.fileName = userName + '的PDP性格测试结果'
     option.datas = [
       {
         sheetData: dataTable,
         sheetName: 'sheet',
-        sheetFilter: ['测试者姓名', 'PDP类型是', '类型名称', '得分'],
-        sheetHeader: ['测试者姓名', 'PDP类型是', '类型名称', '得分'],
+        sheetFilter: ['测试者姓名', 'PDP类型是', '类型名称', '得分', '测试数据'],
+        sheetHeader: ['测试者姓名', 'PDP类型是', '类型名称', '得分', '测试数据'],
       }
     ];
     var toExcel = new ExportJsonExcel(option);
     toExcel.saveExcel();
   }
 
-  insertToSQL (results) {
-    // 获取排序后的结果数据
-    let tempTypes = tabFormateRs.map(single => {
-      single.score = results[single.cateKey] || single.score
-      return single
-    });
-    let rsData = tempTypes.concat();
-    // 重新排序
-    rsData.sort((x, y) => {
-      if (x.score > y.score) {
-        return -1
-      } else if (x.score < y.score) {
-        return 1;
-      } else {
-        return 0;
-      }
-    })
+  // insertToSQL (results) {
+  //   // 获取排序后的结果数据
+  //   let tempTypes = tabFormateRs.map(single => {
+  //     single.score = results[single.cateKey] || single.score
+  //     return single
+  //   });
+  //   let rsData = tempTypes.concat();
+  //   // 重新排序
+  //   rsData.sort((x, y) => {
+  //     if (x.score > y.score) {
+  //       return -1
+  //     } else if (x.score < y.score) {
+  //       return 1;
+  //     } else {
+  //       return 0;
+  //     }
+  //   })
 
-    var mysql = require('mysql');
+  //   var mysql = require('mysql');
 
-    var connection = mysql.createConnection({
-      host: '127.0.0.1',
-      user: 'root',
-      password: '123456',
-      port: '3306',
-      database: 'test'
-    });
+  //   var connection = mysql.createConnection({
+  //     host: '127.0.0.1',
+  //     user: 'root',
+  //     password: '123456',
+  //     port: '3306',
+  //     database: 'test'
+  //   });
 
-    connection.connect();
+  //   connection.connect();
 
-    var addSql = 'INSERT INTO PDPTest(name,type,typeName,score) VALUES(?,?,?,?)';
-    var addSqlParams = [ userName, rsData[0].cateKey, rsData[0].cateName, rsData[0].score];
-    //增
-    connection.query(addSql, addSqlParams, function (err, result) {
-      if (err) {
-        console.log('[INSERT ERROR] - ', err.message);
-        return;
-      }
+  //   var addSql = 'INSERT INTO PDPTest(name,type,typeName,score) VALUES(?,?,?,?)';
+  //   var addSqlParams = [userName, rsData[0].cateKey, rsData[0].cateName, rsData[0].score];
+  //   //增
+  //   connection.query(addSql, addSqlParams, function (err, result) {
+  //     if (err) {
+  //       console.log('[INSERT ERROR] - ', err.message);
+  //       return;
+  //     }
 
-      console.log('--------------------------INSERT----------------------------');
-      //console.log('INSERT ID:',result.insertId);        
-      console.log('INSERT ID:', result);
-      console.log('-----------------------------------------------------------------\n\n');
-    });
+  //     console.log('--------------------------INSERT----------------------------');
+  //     //console.log('INSERT ID:',result.insertId);        
+  //     console.log('INSERT ID:', result);
+  //     console.log('-----------------------------------------------------------------\n\n');
+  //   });
 
-    connection.end();
-  }
+  //   connection.end();
+  // }
 
   render () {
     return (
@@ -338,7 +344,7 @@ class Result extends Component {
 // 尾部
 const Footer = (props) => {
   return (
-    <footer>©2020 炜盛科技版权所有</footer>
+    <footer>©2020 炜盛科技 版权所有</footer>
   )
 }
 
@@ -355,9 +361,16 @@ class MkTest extends Component {
   }
 
   startTest () {
-    this.setState({
-      isStarted: true
-    });
+    if (this.state.userName !== '') {
+      this.setState({
+        isStarted: true
+      });
+    } else {
+      Alert.error('请输入名字后再开始测试！！！')
+      this.setState({
+        isStarted: false
+      });
+    }
   }
 
   finishQuestion (results) {

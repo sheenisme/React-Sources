@@ -4,12 +4,14 @@
   "private": true,
   "dependencies": {
     "echarts": "^4.2.0-rc.2",
+    "element-ui": "^2.13.2",
     "express": "^4.17.1",
     "js-export-excel": "^1.1.4",
     "mysql": "^2.18.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1",
+    "rsuite": "^4.8.1",
     "save": "^2.4.0",
     "xlsx": "^0.16.6"
   },

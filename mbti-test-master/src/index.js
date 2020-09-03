@@ -4,7 +4,9 @@ import ReactDOM, { render } from 'react-dom';
 import ExportJsonExcel from 'js-export-excel';
 import echarts from 'echarts/lib/echarts';
 import 'echarts/lib/chart/radar';
+import 'rsuite/dist/styles/rsuite-default.css';
 import './index.css';
+import { Alert } from 'rsuite';
 let questions = require('./question.json');
 questions.sort(function () {
   return (0.5 - Math.random());
@@ -259,16 +261,16 @@ class Result extends Component {
       return single
     });
     let rsData = tempTypes.concat();
-    // // 排序
-    // rsData.sort((x, y) => {
-    //   if (x.score > y.score) {
-    //     return -1
-    //   } else if (x.score < y.score) {
-    //     return 1;
-    //   } else {
-    //     return 0;
-    //   }
-    // })
+    // 排序
+    rsData.sort((x, y) => {
+      if (x.score > y.score) {
+        return -1
+      } else if (x.score < y.score) {
+        return 1;
+      } else {
+        return 0;
+      }
+    })
     // 双重循环找到最后结果
     var rsType1 = '';
     var rsType2 = '';
@@ -306,7 +308,7 @@ class Result extends Component {
     console.log("测试结果如下：", rsData)
     this.setState({
       rs: rsType1 + rsType2 + rsType3 + rsType4,
-      name:rsData[0].cateName,
+      name: rsData[0].cateName,
       type: rsData[0].type,
       info: rsData[0].info
     })
@@ -387,7 +389,7 @@ class Result extends Component {
       dataTable.push(obj);
     }
     // console.log(dataTable)
-    option.fileName = userName + '的MBTI性格测试结果.xlsx'
+    option.fileName = userName + '的MBTI性格测试结果'
     option.datas = [
       {
         sheetData: dataTable,
@@ -450,7 +452,7 @@ class Result extends Component {
   render () {
     return (
       <div className={this.props.show ? 'result' : 'hide'}>
-        <span className="rs">MBTI测评的类型是：{this.state.rs} -- {this.state.name}</span>
+        <span className="rs">MBTI测评的类型是：{this.state.rs}  -- {this.state.name}</span>
         <div id="myResultTab"></div>
         <div className="info">
           <span className="title">结果解读-- {this.state.type}</span>
@@ -466,7 +468,7 @@ class Result extends Component {
 // 尾部
 const Footer = (props) => {
   return (
-    <footer>©2020 炜盛科技版权所有</footer>
+    <footer>©2020 炜盛科技  版权所有</footer>
   )
 }
 
@@ -483,9 +485,16 @@ class MkTest extends Component {
   }
 
   startTest () {
-    this.setState({
-      isStarted: true
-    });
+    if (this.state.userName !== '') {
+      this.setState({
+        isStarted: true
+      });
+    }else{
+      Alert.error('请输入名字后再开始测试！！！')
+      this.setState({
+        isStarted: false
+      });
+    }
   }
 
   finishQuestion (results) {
